@@ -1,0 +1,21 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "installAll": "npm install && cd ./client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12"
+  }
+}
